@@ -19,7 +19,7 @@ const GitHubStarWidget = () => {
     // Fetch GitHub stats (optional - you can remove this if you don't want API calls)
     const fetchStats = async () => {
       try {
-        const response = await fetch('https://api.github.com/repos/Pawan2141-git/pawanx-portfolio');
+        const response = await fetch('https://api.github.com/repos/Pawan2141-git/Pawanx-portFolio');
         if (response.ok) {
           const data = await response.json();
           setStats({
@@ -40,7 +40,7 @@ const GitHubStarWidget = () => {
   }, []);
 
   const handleStarClick = () => {
-    window.open('https://github.com/Pawan2141-git/pawanx-portfolio', '_blank');
+    window.open('https://github.com/Pawan2141-git/Pawanx-portFolio', '_blank');
   };
 
   if (!isVisible) return null;

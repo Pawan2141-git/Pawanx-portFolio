@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { Heart, ArrowUp, Github, Linkedin, Globe, Mail } from 'lucide-react';
+import { Heart, ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,7 +22,6 @@ const Footer = () => {
             
             <div className="flex justify-center space-x-4 mb-8">
               {[
-                { icon: Globe, url: 'https://v0-modern-portfolio-ivory.vercel.app/', label: 'Portfolio' },
                 { icon: Linkedin, url: 'https://www.linkedin.com/in/pawan-pal-28514632a/', label: 'LinkedIn' },
                 { icon: Github, url: 'https://github.com/Pawan2141-git', label: 'GitHub' },
                 { icon: Mail, url: 'mailto:pawannnn2141@gmail.com', label: 'Email' },

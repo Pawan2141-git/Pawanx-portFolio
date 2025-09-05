@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Download, Mail, Github, Linkedin, Globe, Star } from 'lucide-react';
+import { Download, Mail, Github, Linkedin, Star } from 'lucide-react';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
@@ -42,7 +42,7 @@ const Hero = () => {
   };
 
   const handleStarRepo = () => {
-    window.open('https://github.com/Pawan2141-git/pawanx-portfolio', '_blank');
+    window.open('https://github.com/Pawan2141-git/Pawanx-portFolio', '_blank');
   };
 
   const handleHireMe = () => {
@@ -147,7 +147,6 @@ const Hero = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: Globe, href: 'https://v0-modern-portfolio-ivory.vercel.app/', label: 'Portfolio' },
               { icon: Linkedin, href: 'https://www.linkedin.com/in/pawan-pal-28514632a/', label: 'LinkedIn' },
               { icon: Github, href: 'https://github.com/Pawan2141-git', label: 'GitHub' },
             ].map(({ icon: Icon, href, label }) => (

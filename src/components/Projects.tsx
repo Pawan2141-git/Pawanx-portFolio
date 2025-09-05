@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { ExternalLink, Github, ChevronDown, Star, Code2, Zap } from 'lucide-react';
 
 interface Project {
@@ -88,6 +88,22 @@ const Projects = () => {
       status: 'Demo',
       image: '/assets/projects/invisible-cloak.jpg', // Add your Invisible Cloak demo screenshot here
       imageAlt: 'Computer Vision Invisible Cloak Demo',
+    },
+    {
+      title: 'Modern Portfolio Website',
+      subtitle: 'Interactive Developer Portfolio',
+      description: 'A cutting-edge portfolio website built with React, TypeScript, and Framer Motion featuring glassmorphism UI and smooth animations.',
+      longDescription: 'This modern portfolio showcases advanced web development skills with React 18, TypeScript, Tailwind CSS, and Framer Motion. Features include particle backgrounds, glassmorphism effects, responsive design, and smooth scrolling navigation.',
+      liveUrl: 'https://pawanx-portfolio.vercel.app/',
+      githubUrl: 'https://github.com/Pawan2141-git/Pawanx-portFolio',
+      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+      category: 'Frontend',
+      gradient: 'from-cyan-500 to-blue-500',
+      bgColor: 'bg-gradient-to-br from-cyan-900/20 to-blue-900/20',
+      featured: true,
+      status: 'Live',
+      image: '/assets/projects/portfolio-website.jpg',
+      imageAlt: 'Modern Portfolio Website Interface',
     },
   ];
 
@@ -196,7 +212,7 @@ const Projects = () => {
               </motion.a>
               
               <motion.a
-                href="https://github.com/Pawan2141-git/pawanx-portfolio"
+                href="https://github.com/Pawan2141-git/Pawanx-portFolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -215,9 +231,9 @@ const Projects = () => {
 };
 
 // Enhanced Project Card Component
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
-  const [isHovered, setIsHovered] = React.useState(false);
+const ProjectCard = ({ project, index }: ProjectCardProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div

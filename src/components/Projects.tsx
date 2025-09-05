@@ -194,6 +194,18 @@ const Projects = () => {
                 <Github size={20} />
                 <span>View All Projects</span>
               </motion.a>
+              
+              <motion.a
+                href="https://github.com/Pawan2141-git/pawanx-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 px-6 py-3 glass border border-yellow-500/50 text-yellow-400 font-semibold rounded-xl hover:border-yellow-400 hover:bg-yellow-400/10 transition-all duration-300 group"
+              >
+                <Star size={20} className="group-hover:fill-current transition-all duration-300" />
+                <span>Star This Project</span>
+              </motion.a>
             </div>
           </motion.div>
         </motion.div>

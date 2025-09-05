@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Download, Mail, Github, Linkedin, Globe } from 'lucide-react';
+import { Download, Mail, Github, Linkedin, Globe, Star } from 'lucide-react';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
@@ -38,6 +39,10 @@ const Hero = () => {
   }, [typedText, isDeleting, currentIndex, titles]);
   const handleDownloadResume = () => {
     window.open('#', '_blank');
+  };
+
+  const handleStarRepo = () => {
+    window.open('https://github.com/Pawan2141-git/pawanx-portfolio', '_blank');
   };
 
   const handleHireMe = () => {
@@ -122,6 +127,16 @@ const Hero = () => {
             >
               <Download size={20} />
               Download Resume
+            </motion.button>
+            
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleStarRepo}
+              className="px-6 py-4 glass border border-yellow-500/50 text-yellow-400 font-semibold rounded-lg transition-all duration-300 hover:border-yellow-400 hover:bg-yellow-400/10 flex items-center gap-2 group"
+            >
+              <Star size={20} className="group-hover:fill-current transition-all duration-300" />
+              Star on GitHub
             </motion.button>
           </motion.div>
 

@@ -10,6 +10,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ParticleBackground from './components/ParticleBackground';
+import GitHubStarWidget from './components/GitHubStarWidget';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
+      <GitHubStarWidget />
     </div>
   );
 }

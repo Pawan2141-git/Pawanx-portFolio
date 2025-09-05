@@ -89,22 +89,6 @@ const Projects = () => {
       image: '/assets/projects/invisible-cloak.jpg', // Add your Invisible Cloak demo screenshot here
       imageAlt: 'Computer Vision Invisible Cloak Demo',
     },
-    {
-      title: 'Modern Portfolio Website',
-      subtitle: 'Interactive Developer Portfolio',
-      description: 'A cutting-edge portfolio website built with React, TypeScript, and Framer Motion featuring glassmorphism UI and smooth animations.',
-      longDescription: 'This modern portfolio showcases advanced web development skills with React 18, TypeScript, Tailwind CSS, and Framer Motion. Features include particle backgrounds, glassmorphism effects, responsive design, and smooth scrolling navigation.',
-      liveUrl: 'https://pawanx-portfolio.vercel.app/',
-      githubUrl: 'https://github.com/Pawan2141-git/Pawanx-portFolio',
-      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-      category: 'Frontend',
-      gradient: 'from-cyan-500 to-blue-500',
-      bgColor: 'bg-gradient-to-br from-cyan-900/20 to-blue-900/20',
-      featured: true,
-      status: 'Live',
-      image: '/assets/projects/portfolio-website.jpg',
-      imageAlt: 'Modern Portfolio Website Interface',
-    },
   ];
 
   return (
@@ -209,18 +193,6 @@ const Projects = () => {
               >
                 <Github size={20} />
                 <span>View All Projects</span>
-              </motion.a>
-              
-              <motion.a
-                href="https://github.com/Pawan2141-git/Pawanx-portFolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-6 py-3 glass border border-yellow-500/50 text-yellow-400 font-semibold rounded-xl hover:border-yellow-400 hover:bg-yellow-400/10 transition-all duration-300 group"
-              >
-                <Star size={20} className="group-hover:fill-current transition-all duration-300" />
-                <span>Star This Project</span>
               </motion.a>
             </div>
           </motion.div>

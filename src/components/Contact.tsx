@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Send, User, MessageCircle, Globe, Linkedin, Github, MapPin } from 'lucide-react';
+import { Mail, Send, User, MessageCircle, Linkedin, Github, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +20,6 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Globe, url: 'https://v0-modern-portfolio-ivory.vercel.app/', label: 'Portfolio' },
     { icon: Linkedin, url: 'https://www.linkedin.com/in/pawan-pal-28514632a/', label: 'LinkedIn' },
     { icon: Github, url: 'https://github.com/Pawan2141-git', label: 'GitHub' },
     { icon: Mail, url: 'mailto:pawannnn2141@gmail.com', label: 'Email' },

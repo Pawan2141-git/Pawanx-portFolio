@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Heart, ArrowUp, Github, Linkedin, Globe, Mail } from 'lucide-react';
 
